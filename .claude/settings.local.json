@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__gmail__read_email"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
