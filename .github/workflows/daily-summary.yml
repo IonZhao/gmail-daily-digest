@@ -37,11 +37,3 @@ jobs:
           ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-3-5-sonnet-20241022' }}
           TIMEZONE: ${{ vars.TIMEZONE || 'America/Los_Angeles' }}
         run: npm start
-
-      - name: Upload logs (on failure)
-        if: failure()
-        uses: actions/upload-artifact@v4
-        with:
-          name: logs
-          path: '*.log'
-          retention-days: 7
